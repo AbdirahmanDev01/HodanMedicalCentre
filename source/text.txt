@@ -1,0 +1,191 @@
+
+Dhammaan qoraallada Landing Page-ka
+
+1. Logo
+
+MedCare
+
+2. Navigation Bar
+Home
+About
+Services
+Doctors
+Blog
+Contact
+
+Button:
+
+Book Appointment
+
+Hero Section
+
+Small title:
+
+MEDICAL CARE
+
+Main heading:
+
+Healthcare Solutions
+
+Description:
+
+We provide reliable and professional healthcare services designed to improve your health and well-being. Our experienced doctors are always ready to provide quality medical care.
+
+Button:
+
+Find Doctors
+
+Information Cards
+Card 1
+
+Opening Hours
+
+Monday – Friday
+8:00 AM – 6:00 PM
+
+Saturday
+9:00 AM – 2:00 PM
+
+Sunday
+Closed
+
+Card 2
+
+Book Appointment
+
+Schedule an appointment with one of our professional doctors.
+
+Button:
+
+Request
+
+Card 3
+
+Find Doctors
+
+Meet qualified and experienced healthcare professionals.
+
+Button:
+
+Doctors
+
+Card 4
+
+Find Locations
+
+Find the nearest MedCare clinic or medical center.
+
+Button:
+
+Locations
+
+Medical Services Section
+
+Small title:
+
+OUR SERVICES
+
+Main heading:
+
+Our Medical Services
+
+Description heading:
+
+Professional Healthcare Services
+
+Paragraph:
+
+We provide high-quality medical services through experienced doctors, modern equipment, and patient-focused care. Our goal is to help every patient receive the treatment and support they need.
+
+Services:
+
+Eye Care
+Cardiology
+General Medicine
+Dental Care
+Orthopedic Care
+
+Button:
+
+Learn More
+
+Speciality Section
+
+Small title:
+
+FEATURES
+
+Main heading:
+
+Our Speciality
+
+Card title:
+
+Online Appointment
+
+Description:
+
+Book your medical appointment online quickly and conveniently. Select your preferred doctor, service, date, and appointment time.
+
+Button:
+
+Learn More
+
+Appointment Schedule Section
+
+Small title:
+
+TIMETABLE
+
+Main heading:
+
+Appointment Schedule
+
+Description:
+
+View available appointment times and schedule a consultation with one of our qualified healthcare professionals.
+
+Button:
+
+View Schedule
+
+Ama:
+
+Schedules
+
+Doctors Section
+
+Small title:
+
+OUR TEAM
+
+Main heading:
+
+Our Doctors
+Doctor 1
+
+Dr. Maryan Ali
+
+Specialization:
+
+Cardiologist
+
+Doctor 2
+
+Dr. Ahmed Hassan
+
+Specialization:
+
+General Physician
+
+Doctor 3
+
+Dr. Yusuf Omar
+
+Specialization:
+
+Dentist
+
+Button:
+
+View All Doctors

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="home.css">
+
+    <title>Hodan Medical Centre</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Hodan Medical Centre
+        </div>
+
+        <ul class="ul">
+            <li class="li">
+                <a href="home.html">Home</a>
+            </li>
+
+            <li class="li">
+                <a href="about.html">About</a>
+            </li>
+
+            <li class="li">
+                <a href="services.html">Services</a>
+            </li>
+
+            <li class="li">
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+        <button class="book-appointment" type="button">
+            Book Appointment
+        </button>
+
+    </nav>
+
+    <main>
+
+        <section class="hero-section">
+
+            <h1 class="hero-title">
+                Welcome to Hodan Medical Centre
+            </h1>
+
+            <p class="hero-description">
+                Your health is our priority. We provide comprehensive medical
+                services to ensure your well-being.
+            </p>
+
+            <div class="hero-buttons">
+
+                <div class="doctor-search-box">
+
+                    <iconify-icon
+                        class="search-icon"
+                        icon="mdi:magnify"
+                        width="20"
+                        height="20">
+                    </iconify-icon>
+
+                    <input
+                        type="text"
+                        id="doctor"
+                        placeholder="Find a doctor"
+                    >
+
+                </div>
+
+                <div class="location-box">
+
+                    <iconify-icon
+                        class="location-icon"
+                        icon="lucide:map-pin"
+                        width="20"
+                        height="20">
+                    </iconify-icon>
+
+                    <select class="location-selector">
+                        <option value="" selected disabled>
+                            Select location
+                        </option>
+
+                        <option value="hargeisa">
+                            Hargeisa
+                        </option>
+
+                        <option value="burco">
+                            Burco
+                        </option>
+
+                        <option value="borama">
+                            Borama
+                        </option>
+                    </select>
+
+                </div>
+
+                <button class="btn-find-doctor" type="button">
+                    Find a Doctor
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="service">
+
+          
+              <div class="service-card">
+
+    <iconify-icon
+        class="card-icon"
+        icon="lucide:calendar-days"
+        width="42"
+        height="42">
+    </iconify-icon>
+
+    <h2 class="card-title">
+        Opening Hours
+    </h2>
+
+    <p>
+        Monday – Friday<br>
+        8:00 AM – 6:00 PM
+    </p>
+
+    <p>
+        Saturday<br>
+        9:00 AM – 2:00 PM
+    </p>
+
+</div>
+
+            <div class="service-card">
+
+                <iconify-icon
+                    class="card-icon"
+                    icon="lucide:calendar-check-2"
+                    width="42"
+                    height="42">
+                </iconify-icon>
+
+                <h2 class="card-title">
+                    Book Appointment
+                </h2>
+
+                <p>
+                    Schedule an appointment with one of our professional doctors.
+                </p>
+
+                <button class="service-btn" type="button">
+                    Request
+                </button>
+
+            </div>
+
+            <div class="service-card">
+
+                <iconify-icon
+                    class="card-icon"
+                    icon="mdi:doctor"
+                    width="42"
+                    height="42">
+                </iconify-icon>
+
+                <h2 class="card-title">
+                    Find Doctors
+                </h2>
+
+                <p>
+                    Meet qualified and experienced healthcare professionals.
+                </p>
+
+                <button class="service-btn" type="button">
+                    Doctors
+                </button>
+
+            </div>
+
+            <div class="service-card">
+
+                <iconify-icon
+                    class="card-icon"
+                    icon="lucide:map-pinned"
+                    width="42"
+                    height="42">
+                </iconify-icon>
+
+                <h2 class="card-title">
+                    Find Locations
+                </h2>
+
+                <p>
+                    Find the nearest Hodan Medical Centre clinic or medical centre.
+                </p>
+
+                <button class="service-btn" type="button">
+                    Locations
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+</body>
+</html>
