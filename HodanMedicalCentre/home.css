@@ -83,6 +83,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 
     padding: 50px 30px;
 
@@ -203,6 +204,9 @@ body {
     padding: 40px;
     background-color: whitesmoke;
 }
+.service{
+    background-color:#ECF7FB;
+}
 
 .service-card {
     display: flex;
@@ -221,7 +225,6 @@ body {
 
     transition: transform 0.3s ease;
 }
-
 .service-card:hover {
     transform: translateY(-5px);
 }
@@ -395,4 +398,98 @@ body {
 .service-card p {
     font-size: 14px;
     line-height: 1.7;
+}
+.medical-services-section {
+    padding: 70px 40px;
+    background-color: white;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.small-title {
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #0a98c5;
+}
+
+.main-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #252b35;
+}
+
+.main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.main-content img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+.service-information {
+    flex: 1;
+}
+
+.professional {
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #252b35;
+}
+
+.description {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.more {
+    padding: 12px 24px;
+    background-color: #0a98c5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.more:hover {
+    background-color: #252b35;
+}
+
+@media (max-width: 768px) {
+    .medical-services-section {
+        padding: 50px 20px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-content img {
+        width: 100%;
+    }
+
+    .professional {
+        font-size: 25px;
+    }
 }

@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    background-color: #0A98C5;
+    justify-content: center;
+    
+}
+.title{
+    font-size: 24px;
+    font-weight: 500px;
+    color:aliceblue;
+    align-items: center;
+    height: 100vh;
+}
