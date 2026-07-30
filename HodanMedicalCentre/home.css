@@ -1,13 +1,34 @@
+/* General styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
+    font-family: "Poppins", sans-serif;
     background-color: whitesmoke;
-    color: #252B35;
+    color: #252b35;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /* Navbar */
@@ -20,31 +41,32 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 
     padding: 15px 40px;
-    background-color: whitesmoke;
 
+    background-color: whitesmoke;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-.navbar .logo {
-    width: 230px;
-    color: #0A98C5;
+.logo {
+    color: #0a98c5;
     font-size: 20px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
-.navbar .ul {
+.nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 
     list-style: none;
 }
 
-.navbar .li a {
-    color: #0A98C5;
+.nav-links a {
+    color: #0a98c5;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -52,26 +74,27 @@ body {
     transition: color 0.3s ease;
 }
 
-.navbar .li a:hover {
-    color: #252B35;
+.nav-links a:hover {
+    color: #252b35;
 }
 
 .book-appointment {
     padding: 10px 20px;
 
-    background-color: #252B35;
+    background-color: #252b35;
     color: white;
 
-    border: 2px solid #252B35;
+    border: 2px solid #252b35;
     border-radius: 10px;
 
-    cursor: pointer;
-    transition: 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .book-appointment:hover {
-    background-color: #0A98C5;
-    border-color: #0A98C5;
+    background-color: #0a98c5;
+    border-color: #0a98c5;
 }
 
 /* Hero section */
@@ -83,12 +106,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
 
-    padding: 50px 30px;
+    padding: 70px 30px;
 
-    background-color: #0A98C5;
+    background-color: #0a98c5;
     color: white;
+    text-align: center;
 }
 
 .hero-title {
@@ -96,7 +119,6 @@ body {
 
     font-size: 40px;
     font-weight: 700;
-    text-align: center;
 }
 
 .hero-description {
@@ -105,17 +127,16 @@ body {
 
     font-size: 18px;
     line-height: 1.7;
-    text-align: center;
 }
 
-.hero-buttons {
+.hero-search {
     display: flex;
     align-items: center;
     gap: 10px;
 
     padding: 10px;
-    background-color: aliceblue;
 
+    background-color: aliceblue;
     border-radius: 12px;
 }
 
@@ -126,8 +147,8 @@ body {
     gap: 8px;
 
     padding: 6px 10px;
-    background-color: white;
 
+    background-color: white;
     border-radius: 8px;
 }
 
@@ -141,11 +162,13 @@ body {
     color: white;
 
     border-radius: 50%;
+
+    transition: background-color 0.3s ease;
 }
 
 .search-icon:hover,
 .location-icon:hover {
-    background-color: #252B35;
+    background-color: #252b35;
 }
 
 #doctor {
@@ -153,7 +176,7 @@ body {
     padding: 8px 5px;
 
     background-color: white;
-    color: #252B35;
+    color: #252b35;
 
     border: none;
     outline: none;
@@ -167,7 +190,7 @@ body {
     padding: 8px 5px;
 
     background-color: white;
-    color: #252B35;
+    color: #252b35;
 
     border: none;
     outline: none;
@@ -176,72 +199,73 @@ body {
     cursor: pointer;
 }
 
-.btn-find-doctor {
+.find-doctor-btn {
     padding: 12px 20px;
 
-    background-color: #252B35;
+    background-color: #252b35;
     color: white;
 
     border: none;
     border-radius: 8px;
 
     font-size: 14px;
-    cursor: pointer;
-    transition: 0.3s ease;
+
+    transition: background-color 0.3s ease;
 }
 
-.btn-find-doctor:hover {
-    background-color: #0A98C5;
+.find-doctor-btn:hover {
+    background-color: #0a98c5;
 }
 
-/* Services */
+/* Services section */
 
-.service {
+.services-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 
-    padding: 40px;
-    background-color: whitesmoke;
-}
-.service{
-    background-color:#ECF7FB;
+    padding: 50px 40px;
+
+    background-color: #ecf7fb;
 }
 
 .service-card {
+    min-height: 280px;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
 
-    min-height: 280px;
     padding: 30px 20px;
 
     background-color: white;
-    color: #252B35;
+    color: #252b35;
 
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
-    transition: transform 0.3s ease;
-}
-.service-card:hover {
-    transform: translateY(-5px);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-.opening-card {
-    background-color: #0A98C5;
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.opening-hours-card {
+    background-color: #0a98c5;
     color: white;
 }
 
-.head-box {
-    width: 100%;
+.opening-hours-card .card-icon {
+    color: white;
+}
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    gap: 15px;
+.card-icon {
+    color: #0a98c5;
 }
 
 .card-title {
@@ -249,29 +273,23 @@ body {
     line-height: 1.3;
 }
 
-.card-icon {
-    color: #0A98C5;
-}
-
-.calendar-icon {
-    flex-shrink: 0;
-    color: white;
-}
-
 .service-card p {
     font-size: 14px;
     line-height: 1.7;
 }
 
-.opening-card p {
+.opening-time {
     width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
 }
 
-.opening-card p span {
+.opening-time p {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 15px;
+}
+
+.opening-time strong {
     font-weight: 600;
 }
 
@@ -279,56 +297,251 @@ body {
     margin-top: auto;
     padding: 9px 20px;
 
-    background-color: #0A98C5;
+    background-color: #0a98c5;
     color: white;
 
     border: none;
     border-radius: 5px;
 
-    cursor: pointer;
-    transition: 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .service-btn:hover {
-    background-color: #252B35;
+    background-color: #252b35;
+}
+
+/* Shared section headings */
+
+.section-heading {
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.small-title {
+    margin-bottom: 8px;
+
+    color: #0a98c5;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.main-title {
+    color: #252b35;
+
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Medical services section */
+
+.medical-services-section {
+    padding: 70px 40px;
+
+    background-color: white;
+}
+
+.medical-content {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.medical-image,
+.medical-information {
+    flex: 1;
+}
+
+.medical-image img {
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 15px;
+}
+
+.professional-title {
+    margin-bottom: 15px;
+
+    color: #252b35;
+
+    font-size: 30px;
+}
+
+.medical-description {
+    margin-bottom: 20px;
+
+    color: #555;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.learn-more-btn {
+    padding: 12px 24px;
+
+    background-color: #0a98c5;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #252b35;
+}
+
+/* Speciality section */
+
+.speciality-section {
+    padding: 70px 40px;
+
+    background-color: #e4f3fa;
+}
+
+.speciality-heading {
+    margin-bottom: 35px;
+}
+
+.speciality-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.speciality-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    min-height: 400px;
+    padding: 40px;
+
+    background-color: #0a98c5;
+    color: white;
+
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.speciality-text,
+.speciality-image {
+    flex: 1;
+}
+
+.speciality-card-title {
+    margin-bottom: 15px;
+
+    font-size: 32px;
+}
+
+.speciality-description {
+    max-width: 550px;
+    margin-bottom: 25px;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.speciality-btn {
+    padding: 12px 24px;
+
+    background-color: white;
+    color: #0a98c5;
+
+    border: none;
+    border-radius: 6px;
+
+    font-weight: 500;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.speciality-btn:hover {
+    background-color: #252b35;
+    color: white;
+}
+
+.speciality-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speciality-image img {
+    width: 100%;
+    max-width: 430px;
 }
 
 /* Tablet */
 
 @media (max-width: 950px) {
+
     .navbar {
         padding: 15px 25px;
     }
 
-    .navbar .ul {
+    .nav-links {
         gap: 12px;
     }
 
-    .service {
+    .services-section {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero-buttons {
+    .hero-search {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .medical-content {
+        gap: 30px;
+    }
+
+    .speciality-card {
+        gap: 25px;
+    }
+
+    .speciality-card-title {
+        font-size: 28px;
     }
 }
 
 /* Mobile */
 
 @media (max-width: 650px) {
+
     .navbar {
+        position: static;
+
         flex-direction: column;
-        gap: 15px;
+
+        padding: 20px;
     }
 
-    .navbar .logo {
-        width: auto;
-        text-align: center
+    .logo {
+        text-align: center;
     }
 
-    .navbar .ul {
+    .nav-links {
         flex-wrap: wrap;
+    }
+
+    .hero-section {
+        min-height: auto;
+        padding: 70px 20px;
     }
 
     .hero-title {
@@ -339,140 +552,32 @@ body {
         font-size: 16px;
     }
 
-    .hero-buttons {
+    .hero-search {
         width: 100%;
+        max-width: 450px;
+
         flex-direction: column;
     }
 
     .doctor-search-box,
     .location-box,
-    .btn-find-doctor {
+    .find-doctor-btn {
         width: 100%;
     }
 
-    #doctor {
-        width: 100%;
-    }
-
+    #doctor,
     .location-selector {
         width: 100%;
     }
 
-    .service {
+    .services-section {
         grid-template-columns: 1fr;
-        padding: 25px 20px;
+
+        padding: 40px 20px;
     }
-}
 
-.service-card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-
-    min-height: 280px;
-    padding: 30px 20px;
-
-    background-color: white;
-    color: #252B35;
-
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-
-    transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-}
-
-.card-icon {
-    color:  #0A98C5;
-}
-
-.card-title {
-    font-size: 22px;
-    line-height: 1.3;
-}
-
-.service-card p {
-    font-size: 14px;
-    line-height: 1.7;
-}
-.medical-services-section {
-    padding: 70px 40px;
-    background-color: white;
-}
-
-.title-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.small-title {
-    margin-bottom: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: #0a98c5;
-}
-
-.main-title {
-    font-size: 36px;
-    font-weight: 700;
-    color: #252b35;
-}
-
-.main-content {
-    max-width: 1100px;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.main-content img {
-    width: 80%;
-    max-width: 500px;
-    border-radius: 15px;
-}
-
-.service-information {
-    flex: 1;
-}
-
-.professional {
-    margin-bottom: 15px;
-    font-size: 30px;
-    color: #252b35;
-}
-
-.description {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #555;
-}
-
-.more {
-    padding: 12px 24px;
-    background-color: #0a98c5;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.more:hover {
-    background-color: #252b35;
-}
-
-@media (max-width: 768px) {
-    .medical-services-section {
+    .medical-services-section,
+    .speciality-section {
         padding: 50px 20px;
     }
 
@@ -480,16 +585,33 @@ body {
         font-size: 28px;
     }
 
-    .main-content {
+    .medical-content {
         flex-direction: column;
+
         text-align: center;
     }
 
-    .main-content img {
-        width: 100%;
+    .medical-image img {
+        margin: 0 auto;
     }
 
-    .professional {
+    .professional-title {
         font-size: 25px;
+    }
+
+    .speciality-card {
+        flex-direction: column;
+
+        padding: 30px 20px;
+
+        text-align: center;
+    }
+
+    .speciality-card-title {
+        font-size: 26px;
+    }
+
+    .speciality-image img {
+        max-width: 320px;
     }
 }

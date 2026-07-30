@@ -21,6 +21,8 @@
         rel="stylesheet"
     >
 
+<link rel="icon" href="../images/logo.jpg">
+
     <link rel="stylesheet" href="home.css">
 
     <title>Hodan Medical Centre</title>
@@ -28,28 +30,32 @@
 
 <body>
 
+    <!-- Navbar -->
+
     <nav class="navbar">
 
         <div class="logo">
             Hodan Medical Centre
         </div>
 
-        <ul class="ul">
-            <li class="li">
+        <ul class="nav-links">
+
+            <li>
                 <a href="home.html">Home</a>
             </li>
 
-            <li class="li">
+            <li>
                 <a href="about.html">About</a>
             </li>
 
-            <li class="li">
-                <a href="services.html">Services</a>
+            <li>
+                <a href="services.htm">Services</a>
             </li>
 
-            <li class="li">
+            <li>
                 <a href="contact.html">Contact</a>
             </li>
+
         </ul>
 
         <button class="book-appointment" type="button">
@@ -73,7 +79,7 @@
                 services to ensure your well-being.
             </p>
 
-            <div class="hero-buttons">
+            <div class="hero-search">
 
                 <div class="doctor-search-box">
 
@@ -123,7 +129,7 @@
 
                 </div>
 
-                <button class="btn-find-doctor" type="button">
+                <button class="find-doctor-btn" type="button">
                     Find a Doctor
                 </button>
 
@@ -133,9 +139,9 @@
 
         <!-- Service Cards -->
 
-        <section class="service">
+        <section class="services-section">
 
-            <div class="service-card">
+            <article class="service-card opening-hours-card">
 
                 <iconify-icon
                     class="card-icon"
@@ -148,21 +154,23 @@
                     Opening Hours
                 </h2>
 
-                <p>
-                    Monday – Friday
-                    <br>
-                    8:00 AM – 6:00 PM
-                </p>
+                <div class="opening-time">
 
-                <p>
-                    Saturday
-                    <br>
-                    9:00 AM – 2:00 PM
-                </p>
+                    <p>
+                        <strong>Monday – Friday</strong>
+                        <span>8:00 AM – 6:00 PM</span>
+                    </p>
 
-            </div>
+                    <p>
+                        <strong>Saturday</strong>
+                        <span>9:00 AM – 2:00 PM</span>
+                    </p>
 
-            <div class="service-card">
+                </div>
+
+            </article>
+
+            <article class="service-card">
 
                 <iconify-icon
                     class="card-icon"
@@ -176,16 +184,17 @@
                 </h2>
 
                 <p>
-                    Schedule an appointment with one of our professional doctors.
+                    Schedule an appointment with one of our professional
+                    doctors.
                 </p>
 
                 <button class="service-btn" type="button">
                     Request
                 </button>
 
-            </div>
+            </article>
 
-            <div class="service-card">
+            <article class="service-card">
 
                 <iconify-icon
                     class="card-icon"
@@ -206,9 +215,9 @@
                     Doctors
                 </button>
 
-            </div>
+            </article>
 
-            <div class="service-card">
+            <article class="service-card">
 
                 <iconify-icon
                     class="card-icon"
@@ -222,14 +231,15 @@
                 </h2>
 
                 <p>
-                    Find the nearest Hodan Medical Centre clinic or medical centre.
+                    Find the nearest Hodan Medical Centre clinic or medical
+                    centre.
                 </p>
 
                 <button class="service-btn" type="button">
                     Locations
                 </button>
 
-            </div>
+            </article>
 
         </section>
 
@@ -237,7 +247,7 @@
 
         <section class="medical-services-section">
 
-            <div class="title-section">
+            <div class="section-heading">
 
                 <h3 class="small-title">
                     OUR SERVICES
@@ -249,7 +259,7 @@
 
             </div>
 
-            <div class="main-content">
+            <div class="medical-content">
 
                 <div class="medical-image">
 
@@ -260,24 +270,77 @@
 
                 </div>
 
-                <div class="service-information">
+                <div class="medical-information">
 
-                    <h2 class="professional">
+                    <h2 class="professional-title">
                         Professional Healthcare Services
                     </h2>
 
-                    <p class="description">
+                    <p class="medical-description">
                         We provide high-quality medical services through
-                        experienced doctors, modern equipment, and patient-focused
-                        care. Our goal is to help every patient receive the
-                        treatment and support they need.
+                        experienced doctors, modern equipment, and
+                        patient-focused care. Our goal is to help every patient
+                        receive the treatment and support they need.
                     </p>
 
-                    <button class="more" type="button">
+                    <button class="learn-more-btn" type="button">
                         Learn More
                     </button>
 
                 </div>
+
+            </div>
+
+        </section>
+
+        <!-- Speciality Section -->
+
+        <section class="speciality-section">
+
+            <div class="section-heading speciality-heading">
+
+                <h3 class="small-title">
+                    FEATURES
+                </h3>
+
+                <h2 class="main-title">
+                    Our Speciality
+                </h2>
+
+            </div>
+
+            <div class="speciality-content">
+
+                <article class="speciality-card">
+
+                    <div class="speciality-text">
+
+                        <h2 class="speciality-card-title">
+                            Online Appointment
+                        </h2>
+
+                        <p class="speciality-description">
+                            Book your medical appointment online quickly and
+                            conveniently. Select your preferred doctor, service,
+                            date, and appointment time.
+                        </p>
+
+                        <button class="speciality-btn" type="button">
+                            Learn More
+                        </button>
+
+                    </div>
+
+                    <div class="speciality-image">
+
+                        <img
+                            src="../images/shaybaadh.png"
+                            alt="Medical laboratory service"
+                        >
+
+                    </div>
+
+                </article>
 
             </div>
 
