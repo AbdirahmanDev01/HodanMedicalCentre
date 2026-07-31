@@ -84,3 +84,17 @@ img {
     background-color: #0a98c5;
     border-color: #0a98c5;
 }
+.hero-section-about {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 70px 30px;
+
+    background-color: #0a98c5;
+    color: white;
+    text-align: center;
+}
